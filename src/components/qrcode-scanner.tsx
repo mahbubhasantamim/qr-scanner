@@ -12,7 +12,7 @@ export const QRScanner = () => {
   return (
     <div>
       <QrReader
-        delay={300}
+        delay={100}
         onError={(error) => {
           setError(error.message);
         }}
@@ -23,7 +23,7 @@ export const QRScanner = () => {
             setError(null);
           }
         }}
-        style={{ width: "500px" }}
+        style={{ width: "400px" }}
       />
       <p>{result}</p>
     </div>
